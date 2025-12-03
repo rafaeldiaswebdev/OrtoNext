@@ -1,0 +1,46 @@
+# CodeIgniter
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+# Uploads (arquivos enviados pelos usuários)
+uploads/*
+!uploads/.htaccess
+!uploads/index.html
+
+# Configurações locais
+application/config/database.php
+application/config/config.php
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependências
+vendor/
+node_modules/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+*.swp
+*.bak
+*~
+
+# Arquivos de teste
+teste_apis.html
+application/views/admin/clinicas/criar_backup.php
+application/views/admin/clinicas/criar_novo.php
+
+sync_config.jsonc

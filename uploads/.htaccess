@@ -1,0 +1,27 @@
+# Proteção de arquivos - Sistema de Alinhadores
+# Rafael Dias - doisr.com.br
+# 03/12/2025
+
+# Bloquear execução de scripts PHP e outros
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Permitir acesso apenas a tipos de arquivo específicos
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf|stl|zip)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Desabilitar listagem de diretórios
+Options -Indexes
+
+# Desabilitar execução de PHP
+php_flag engine off
+
+# Headers de segurança
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>

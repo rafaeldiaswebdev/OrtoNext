@@ -1,0 +1,346 @@
+/**
+ * Estilos Customizados - Painel Administrativo
+ * Sistema de Orçamento Le Cortine
+ * 
+ * @author Rafael Dias - doisr.com.br
+ * @date 13/11/2024
+ */
+
+/* Forçar tema claro */
+body, html {
+    background-color: #f5f7fb !important;
+    color: #1e293b !important;
+}
+
+.page {
+    background-color: #f5f7fb !important;
+}
+
+/* Ajustes gerais */
+.page-wrapper {
+    min-height: calc(100vh - 3.5rem);
+    background-color: #f5f7fb !important;
+}
+
+/* Textos */
+.page-title,
+.card-title,
+h1, h2, h3, h4, h5, h6 {
+    color: #1e293b !important;
+}
+
+.page-pretitle {
+    color: #626976 !important;
+}
+
+.text-secondary {
+    color: #626976 !important;
+}
+
+/* Links */
+a {
+    color: #206bc4;
+}
+
+a:hover {
+    color: #1a569d;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e6e7e9 !important;
+    color: #1e293b !important;
+}
+
+.card-body {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+}
+
+.card-footer {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #e6e7e9 !important;
+}
+
+/* Tabelas */
+.table {
+    color: #1e293b !important;
+}
+
+.table thead th {
+    background-color: #f8f9fa !important;
+    color: #1e293b !important;
+    border-bottom: 2px solid #e6e7e9 !important;
+}
+
+.table-vcenter td {
+    vertical-align: middle;
+    color: #1e293b !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Badges customizados */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e6e7e9 !important;
+    color: #1e293b !important;
+}
+
+.navbar .nav-link {
+    color: #626976 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #206bc4 !important;
+}
+
+.navbar .nav-link.active {
+    color: #206bc4 !important;
+}
+
+/* Formulários */
+.form-label {
+    color: #1e293b !important;
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #d0d4d9 !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #206bc4 !important;
+    box-shadow: 0 0 0 0.25rem rgba(32, 107, 196, 0.1) !important;
+}
+
+.form-hint {
+    color: #626976 !important;
+}
+
+/* Botões */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid #e6e7e9 !important;
+}
+
+.dropdown-item {
+    color: #1e293b !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #206bc4 !important;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+.breadcrumb-item {
+    color: #626976 !important;
+}
+
+.breadcrumb-item.active {
+    color: #1e293b !important;
+}
+
+.breadcrumb-item a {
+    color: #206bc4 !important;
+}
+
+/* Avatar */
+.avatar {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Empty state */
+.empty {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 3rem;
+    color: var(--tblr-secondary);
+    margin-bottom: 1rem;
+}
+
+.empty-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Loading */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Drag and drop upload */
+.dropzone {
+    border: 2px dashed var(--tblr-border-color);
+    border-radius: var(--tblr-border-radius);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+    border-color: var(--tblr-primary);
+    background: var(--tblr-light);
+}
+
+.dropzone.dragover {
+    border-color: var(--tblr-primary);
+    background: var(--tblr-primary-lt);
+}
+
+/* Image preview */
+.image-preview {
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.image-preview img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: var(--tblr-border-radius);
+    border: 1px solid var(--tblr-border-color);
+}
+
+.image-preview .remove-image {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--tblr-danger);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Sortable */
+.sortable-ghost {
+    opacity: 0.4;
+}
+
+.sortable-drag {
+    cursor: move;
+}
+
+/* Status indicators */
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.active {
+    background: var(--tblr-success);
+}
+
+.status-indicator.inactive {
+    background: var(--tblr-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1rem 0;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .page-header,
+    .card-actions,
+    .btn,
+    .footer {
+        display: none !important;
+    }
+    
+    .page-wrapper {
+        padding: 0 !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background: var(--tblr-dark);
+    }
+    
+    .empty-icon {
+        color: var(--tblr-secondary-lt);
+    }
+}
