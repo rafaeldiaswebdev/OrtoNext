@@ -155,6 +155,15 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item <?= $menu_ativo == 'pedidos' ? 'active' : '' ?>">
+                                <a class="nav-link" href="<?= base_url('admin/pedidos') ?>">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <i class="ti ti-file-text"></i>
+                                    </span>
+                                    <span class="nav-link-title">Pedidos</span>
+                                </a>
+                            </li>
+
                             <?php if ($usuario_logado->nivel == 'admin'): ?>
                             <li class="nav-item <?= $menu_ativo == 'usuarios' ? 'active' : '' ?>">
                                 <a class="nav-link" href="<?= base_url('admin/usuarios') ?>">
