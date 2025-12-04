@@ -137,7 +137,7 @@ class Clinica_model extends CI_Model {
      * Buscar dentistas vinculados à clínica
      */
     public function get_dentistas($clinica_id) {
-        $this->db->select('dentistas.*, dentista_clinica.vinculado_em');
+        $this->db->select('dentistas.*, dentista_clinica.criado_em as vinculado_em');
         $this->db->from('dentistas');
         $this->db->join('dentista_clinica', 'dentista_clinica.dentista_id = dentistas.id');
         $this->db->where('dentista_clinica.clinica_id', $clinica_id);

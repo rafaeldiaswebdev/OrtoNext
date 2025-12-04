@@ -37,6 +37,11 @@
     <!-- jQuery (DEVE vir ANTES de tudo) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
+    <!-- Base URL para JavaScript -->
+    <script>
+        var BASE_URL = '<?= base_url() ?>';
+    </script>
+
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
