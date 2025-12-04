@@ -137,6 +137,15 @@
                                 </a>
                             </li>
 
+                            <li class="nav-item <?= $menu_ativo == 'dentistas' ? 'active' : '' ?>">
+                                <a class="nav-link" href="<?= base_url('admin/dentistas') ?>">
+                                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                        <i class="ti ti-user-heart"></i>
+                                    </span>
+                                    <span class="nav-link-title">Dentistas</span>
+                                </a>
+                            </li>
+
                             <?php if ($usuario_logado->nivel == 'admin'): ?>
                             <li class="nav-item <?= $menu_ativo == 'usuarios' ? 'active' : '' ?>">
                                 <a class="nav-link" href="<?= base_url('admin/usuarios') ?>">
